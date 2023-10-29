@@ -2,384 +2,621 @@
 <html lang="en">
   {% load static %}
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <title>Promise Nyamela</title>
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png' %}" rel="icon">
+  <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+  <!-- Vendor CSS Files -->
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+  <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-                    
-    <link href="https://fontawesome.com/icons/hackerrank?f=brands&s=solid" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
-    <link href="{% static 'vendor/devicons/css/devicons.min.css' %}" rel="stylesheet">
-    <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/resume.min.css' %}" rel="stylesheet">
+</head>
 
-  </head>
+<body>
 
-  <body id="page-top">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none"></span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" 
-          src="{% static 'img/profile.jpg' %}" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
-        </ul>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static '/img/i.jpg' %}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Promise Nyamela</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="github"><i class="bi bi-github"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
       </div>
-    </nav>
 
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h2 class="mb-0">Promise
-            <span class="text-primary">Nyamela</span>
-          </h2>
-          <div class="subheading mb-5">
-            Software Support Engineer | QA Engineer | Software Developer
-          </div>
-          <p class="mb-5">
-            As a versatile and self-motivated professional, I have cultivated a diverse skill 
-            set and a passion for excellence in the world of software. With a foundation built 
-            on self-guided learning, I've delved into various domains, including software 
-            development, quality assurance (QA), QA automation, and software support 
-            engineering. My expertise extends to Python, Java, and C#, where I harness these 
-            languages to craft innovative solutions and ensure seamless user experiences.
-          </p>
-          <p class="mb-5">
-            Throughout my career, I've honed my ability to bridge the gap between technical 
-            complexity and customer satisfaction. My commitment to delivering high-quality 
-            software and providing exceptional customer service has been a driving force in my 
-            journey. I thrive in dynamic environments, adapting quickly to evolving challenges 
-            and finding creative solutions.
-          </p>
-          <p class="mb-5">
-              I am passionate about continuous improvement, staying up-to-date with industry 
-              trends, and collaborating with teams to achieve collective goals. With a solid 
-              foundation and a hunger for growth, I look forward to contributing my skills and 
-              knowledge to exciting projects and helping organizations thrive in the digital age.     
-          </p>
-          <!-- ===================================  SOCIAL MEDIA ==================== -->
-          <ul class="list-inline list-social-icons mb-0">
-          
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/promise-nyamela-033585156/" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/Makhosandile" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-<!-- ======================================== END ABOUT SECTION ============================== -->
-
-
-<!-- ======================================= EXPERIENCE ================================= -->
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Support Engineer</h3>
-              <div class="subheading mb-3">M4JAM</div>
-                <P>
-                  Provide onsite support.  
-                </P>
-
-                <p>
-                  Perform root cause analysis.
-                </p>
-
-                <P>
-                  Coordinating efforts with quality assurance engineers, business analysts, software engineers, 
-                  customer support agents and other teams to identify and resolve issues effectively.
-                </P>
-
-                <P>
-                  Documenting and tracking issues in software and hardware operation for internal and 
-                  consumer-facing systems.
-                </P>
-
-                <p>
-                  Providing content for tutorials, training, and documentation.
-                </p>
-
-                <p>
-                  Assisting business analysts and quality assurance engineers plan, implement 
-                  and test software throughout the software development lifecycle. 
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2018 - March 2023</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Java Developer</h3>
-              <div class="subheading mb-3">Reverside</div>
-
-              <p>
-                Collaborate with senior Java developers to understand project requirements and specifications.
-              </p>
-
-              <p>
-                Participate in the design and implementation of Java applications, adhering to best coding practices.
-              </p>
-
-              <p>
-                Assist in writing efficient and maintainable code for software functionality.
-              </p>
-
-              <p>
-                Support the testing and debugging processes to identify and resolve issues.
-              </p>
-
-              <p>
-                Document the development process, code changes, and application functionalities.
-              </p>
-
-              <p>
-                Stay up-to-date with the latest Java technologies and trends.
-              </p>
-
-              <p>
-                Contribute ideas and solutions to improve the overall development process
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2017 - January 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Intern Web Developer</h3>
-              <div class="subheading mb-3">Independant Media</div>
-                <p>
-                  Developing and writing scripts using the following tech stack:
-                  WordPress, JavaScript, Angular, PHP
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2016 - September 2017</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Customer Service Technician</h3>
-              <div class="subheading mb-3">Hifi Corp.</div>
-                <p>
-                  Typing, operating public phones, printers, faxes
-                </p>
-                <P>
-                  Admin duties
-                </P>
-
-                <p>
-                  I later learned troubleshooting and repair computer hardware and Software and 
-                  proposed we add computer repairs and software installations to our services.
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- =============================== EDUCATION SECTION ================================== -->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Zwelitsha Senior Secondary School</h3>
-              <div class="subheading mb-3">Grade 12</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2003 - 2005</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Hyperion Dev.</h3>
-              <div class="subheading mb-3">Software Development Micro-Degree</div>
-              <p>Java, python, C#</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2016 - November 2016</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-<!-- ==================================  SKILLS ==============================================-->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              
-              <i class="devicon-java-plain-wordmark colored"></i>
-          
-            </li>
-            <li class="list-inline-item">
-              
-              <i class="devicon-python-plain-wordmark colored"></i>
-          
-            </li>
-            <li class="list-inline-item">
-                
-              <i class="devicon-javascript-plain colored"></i>
-          
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-spring-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-django"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-flask-original-wordmark"></i>
-            </li>
-            <li class="list-inline-item">
-              
-              <i class="devicon-angularjs-plain-wordmark colored"></i>
-  
-            </li>
-            <li class="list-inline-item">
-              
-              <i class="devicon-postgresql-plain-wordmark colored"></i>
-          
-            </li>
-            <li class="list-inline-item">
-              
-              <i class="devicon-docker-plain-wordmark colored"></i>
-          
-            </li>
-            <li class="list-inline-item">
-              
-              
-              <i class="devicon-github-original-wordmark colored"></i>
-          
-          
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-selenium-original colored"></i>
-            </li>
-
-
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-circleci-plain-wordmark colored"></i>
-            </li>
-          
-        
-            <li class="list-inline-item">
-              <i class="devicon-csharp-plain-wordmark colored"></i>
-            </li>
-          
-            
-          
-          </ul>
-
-          <div class="subheading mb-3">Other Skills</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Monotoring tools(Data dog, ELK Stack)
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Rest assured
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Postman
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Software Development lifecycle
-            </li>
-          </ul>
-        </div>
-      </section>
-
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Home</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
 
-    <script src="https://kit.fontawesome.com/47bb72732b.js" crossorigin="anonymous"></script>
+  <!-- ======= Hero Section ======= 
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Alex Smith</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+    </div>
+  </section> End Hero -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <main id="main">
 
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/resume.min.js' %}"></script>
+        <div class="section-title">
+          <h2>About</h2>
 
-  </body>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{% static '/img/s.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Software Support Engineer | QA Engineer</h3>
+
+            <p class="fst-italic mb-2">
+              As a versatile and self-motivated professional, I have cultivated a diverse skill 
+              set and a passion for excellence in the world of software. With a foundation built 
+              on self-guided learning, I've delved into various domains, including software 
+              development, quality assurance (QA), QA automation, and software support 
+              engineering. My expertise extends to Python, Java, and C#, where I harness these 
+              languages to craft innovative solutions and ensure seamless user experiences.
+            </p>
+            <p class="fst-italic mb-2">
+              Throughout my career, I've honed my ability to bridge the gap between technical 
+              complexity and customer satisfaction. My commitment to delivering high-quality 
+              software and providing exceptional customer service has been a driving force in my 
+              journey. I thrive in dynamic environments, adapting quickly to evolving challenges 
+              and finding creative solutions.
+            </p>
+            <p class="fst-italic mb-2">
+                I am passionate about continuous improvement, staying up-to-date with industry 
+                trends, and collaborating with teams to achieve collective goals. With a solid 
+                foundation and a hunger for growth, I look forward to contributing my skills and 
+                knowledge to exciting projects and helping organizations thrive in the digital age.     
+            </p>
+
+          
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="social-links mt-3">
+            
+            <i class="devicon-python-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-java-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-javascript-plain colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-angularjs-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-django-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-spring-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>  
+            <i class="devicon-flask-original-wordmark" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-docker-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-selenium-original colored" style="font-size: 70px; margin-right: 20px;"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored" style="font-size: 70px; margin-right: 20px;"></i>  <br><br><br>
+            <i class="devicon-postgresql-plain-wordmark colored " style="font-size: 70px; margin-right: 20px;"></i> 
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Matric Certificate(Gade 12)</h4>
+              <h5>2003 - 2005</h5>
+              <p><em>Zwelitsha Senior Secondary School</em></p>
+              <li>isiXhosa</li>
+              <li>English</li>
+              <li>Mathematics</li>
+              <li>Physical Science</li>
+              <li>Biology</li>
+              <li>Agricultural Science</li>
+            </div>
+            <div class="resume-item">
+              <h4>Software Development Micro- Degree</h4>
+              <h5>06/2016 - 12/2016</h5>
+              <p>
+                <em>Hyperion Dev.</em>
+              </p>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C#</li>
+              </ul>
+            </div>
+
+
+          <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Customer Services Consultant</h4>
+              <h5>October 2009 - September 2011</h5>
+              <p><em>D&G Communications</em></p>
+              <ul>
+                <li>Typing, operating public phones, printers, faxes</li>
+                <li>Admin duties</li>
+                <li>
+                  I later learned troubleshooting and repair computer hardware 
+                  and Software and proposed we add computer repairs and software installations to our services
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Customer Services Technician</h4>
+              <h5>September 2011 - October 2014</h5>
+              <p><em>Hifi Corp.</em></p>
+              <ul>
+                <li>General assistance of customers with their grievances and general enquiries </li>
+                <li>Troubleshooting of Computers and all other returned units from customers</li>
+                <li>General testing of units for the customer satisfaction and convenience</li>
+                <li>Computer software installations </li>
+                <li>General customer services admin work</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+            <h4>Self Employed</h4>
+              <h5>December 2016 - September 2017</h5>
+              <ul>
+                <li>Troubleshooting and repairing Laptops and Desktop Computers </li>
+                <li>Software troubleshooting and installations</li>
+                <li>Buy broken Desktop and laptops, repair/ refurbish and reselling</li>
+            </div>
+            
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+           
+            <div class="resume-item">
+              <h4>Intern Web Developer</h4>
+              <h5>December 2016 - September 2017</h5>
+              <p><em>Independent Media</em></p>
+              <p>
+                Developing and writing scripts using the following tech stack:
+              </p>
+              <ul>
+                <li>WordPress, JavaScript, Angular, PHP</li>
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Junior Java developer</h4>
+              <h5>October 2017 - January 2018</h5>
+              <p><em>Reverside</em></p>
+              <ul>
+              <li>Collaborate with senior Java developers to understand project requirements and specifications.</li>
+              <li>Participate in the design and implementation of Java applications, adhering to best coding practices.</li>
+              <li>Assist in writing efficient and maintainable code for software functionality.</li>
+              <li>Support the testing and debugging processes to identify and resolve issues.</li>
+              <li>Document the development process, code changes, and application functionalities.</li>
+              <li>Stay up-to-date with the latest Java technologies and trends.</li>
+              <li>Contribute ideas and solutions to improve the overall development process</li>
+
+            </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Support Specialist</h4>
+              <h5>January 2018 - March 2023</h5>
+              <p><em>M4JAM</em></p>
+              <ul>
+                <li>Coordinating efforts with business analysts, software engineers, customer support agents and other   teams to identify and resolve issues effectively.</li>
+                <li>Documenting and tracking issues in software and hardware operation for internal and consumer-facing systems. Providing content for tutorials, training, and documentation. </li>
+                <li>Plan, implement and test software throughout the software development lifecycle.</li>
+                <li>Create and update automated test scripts and frameworks</li>
+                <li>Detecting and troubleshooting software defects, working closely with developers.</li>
+                <li>Ensure regular test execution and prompt reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static '/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static '/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static '/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static '/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static '/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static '/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static '/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</body>
 
 </html>
